@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{03D3C526-5FB7-4AD7-BB02-9DE19AB98A80}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Database</RootNamespace>
+    <AssemblyName>Database</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Add_OsnovnoePocazatel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Add_OsnovnoePocazatel.Designer.cs">
+      <DependentUpon>Add_OsnovnoePocazatel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Add_Predpriatia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Add_Predpriatia.Designer.cs">
+      <DependentUpon>Add_Predpriatia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Add_Proizvodstv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Add_Proizvodstv.Designer.cs">
+      <DependentUpon>Add_Proizvodstv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Add_ZemelYchast.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Add_ZemelYchast.Designer.cs">
+      <DependentUpon>Add_ZemelYchast.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Edit_OsnovnoePocazatel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Edit_OsnovnoePocazatel.Designer.cs">
+      <DependentUpon>Edit_OsnovnoePocazatel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Edit_Predpriatia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Edit_Predpriatia.Designer.cs">
+      <DependentUpon>Edit_Predpriatia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Edit_Proizvodstv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Edit_Proizvodstv.Designer.cs">
+      <DependentUpon>Edit_Proizvodstv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Edit_ZemelYchast.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Edit_ZemelYchast.Designer.cs">
+      <DependentUpon>Edit_ZemelYchast.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_Delete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_Delete.Designer.cs">
+      <DependentUpon>Form_Delete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_Infotmation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_Infotmation.Designer.cs">
+      <DependentUpon>Form_Infotmation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_Messange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_Messange.Designer.cs">
+      <DependentUpon>Form_Messange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_Print.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_Print.Designer.cs">
+      <DependentUpon>Form_Print.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Script\Databaseconnect.cs" />
+    <Compile Include="Script\Users.cs" />
+    <Compile Include="UsersControl\UC_Home.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UsersControl\UC_Home.Designer.cs">
+      <DependentUpon>UC_Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsersControl\UC_OsnovnoePocazatel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UsersControl\UC_OsnovnoePocazatel.Designer.cs">
+      <DependentUpon>UC_OsnovnoePocazatel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsersControl\UC_Predpriatia.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UsersControl\UC_Predpriatia.Designer.cs">
+      <DependentUpon>UC_Predpriatia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsersControl\UC_Proizvodstv.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UsersControl\UC_Proizvodstv.Designer.cs">
+      <DependentUpon>UC_Proizvodstv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsersControl\UC_ZemelYchast.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UsersControl\UC_ZemelYchast.Designer.cs">
+      <DependentUpon>UC_ZemelYchast.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Add_OsnovnoePocazatel.resx">
+      <DependentUpon>Add_OsnovnoePocazatel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Add_Predpriatia.resx">
+      <DependentUpon>Add_Predpriatia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Add_Proizvodstv.resx">
+      <DependentUpon>Add_Proizvodstv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Add_ZemelYchast.resx">
+      <DependentUpon>Add_ZemelYchast.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Edit_OsnovnoePocazatel.resx">
+      <DependentUpon>Edit_OsnovnoePocazatel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Edit_Predpriatia.resx">
+      <DependentUpon>Edit_Predpriatia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Edit_Proizvodstv.resx">
+      <DependentUpon>Edit_Proizvodstv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Edit_ZemelYchast.resx">
+      <DependentUpon>Edit_ZemelYchast.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_Delete.resx">
+      <DependentUpon>Form_Delete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_Infotmation.resx">
+      <DependentUpon>Form_Infotmation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_Messange.resx">
+      <DependentUpon>Form_Messange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_Print.resx">
+      <DependentUpon>Form_Print.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UsersControl\UC_Home.resx">
+      <DependentUpon>UC_Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsersControl\UC_OsnovnoePocazatel.resx">
+      <DependentUpon>UC_OsnovnoePocazatel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsersControl\UC_Predpriatia.resx">
+      <DependentUpon>UC_Predpriatia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsersControl\UC_Proizvodstv.resx">
+      <DependentUpon>UC_Proizvodstv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsersControl\UC_ZemelYchast.resx">
+      <DependentUpon>UC_ZemelYchast.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_create_document_26px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_male_user_26px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_password_26px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_search_26px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_add_user_male_26px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_delete_file_26px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_edit_26px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_print_26px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_clock_26px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_event_26px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_filter_26px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>6</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

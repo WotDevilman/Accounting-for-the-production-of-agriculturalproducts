@@ -1,0 +1,10 @@
+Z:\source\repos\Database\obj\Debug\DatabaseS.csprojAssemblyReference.cache
+Z:\source\repos\Database\obj\Debug\Database.Form1.resources
+Z:\source\repos\Database\obj\Debug\Database.Forms.Add_W.resources
+Z:\source\repos\Database\obj\Debug\DatabaseS.Main.resources
+Z:\source\repos\Database\obj\Debug\Database.Properties.Resources.resources
+Z:\source\repos\Database\obj\Debug\Database.UsersControl.UC_Predpriatia.resources
+Z:\source\repos\Database\obj\Debug\DatabaseS.csproj.GenerateResource.cache
+Z:\source\repos\Database\obj\Debug\DatabaseS.csproj.CoreCompileInputs.cache
+Z:\source\repos\Database\obj\Debug\Database.exe
+Z:\source\repos\Database\obj\Debug\Database.pdb
